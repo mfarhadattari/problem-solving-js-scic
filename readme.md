@@ -56,6 +56,22 @@ const findSumIndices = (sortedArray, targetValue) => {
 ```
 ### Task 5: Implement a simple JavaScript calculator. The calculator should take two numbers and an operator (+, -, \*, /) as input and return the result of the operation.
 
+```JavaScript
+const arithmeticCalculator = (num1, num2, operation) => {
+  switch (operation) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    case "/":
+      return num1 / num2;
+    default:
+      return "Input Correct Information";
+  }
+};
+```
 ### Task 6: Create a program that generates a random password of a specified length. The password should include a mix of uppercase letters, lowercase letters, numbers, and special characters.
 
 ### Task 7: Implement a function that converts a Roman numeral to an integer. The function should take a Roman numeral string (e.g., "IX" or "XXI") as input and return the corresponding integer value.
