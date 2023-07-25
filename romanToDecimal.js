@@ -2,6 +2,7 @@
 
 // defining function
 const romanToDecimal = (romanNumeral) => {
+  romanNumeral = romanNumeral.toUpperCase();
   const romanValues = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };
   let totalDecimal = 0;
   let previousDecimal = 0;
@@ -18,5 +19,5 @@ const romanToDecimal = (romanNumeral) => {
 };
 
 // testing function
-const testingResult = romanToDecimal("XI");
+const testingResult = romanToDecimal("xx");
 console.log(testingResult);
