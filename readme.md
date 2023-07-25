@@ -108,3 +108,19 @@ const romanToDecimal = (romanNumeral) => {
 ```
 
 ### Task 8: Implement a JavaScript function to find the second smallest element in an array of numbers. The function should return the second smallest number.
+
+```javaScript
+const secondSmallestOfArray = (arrayOfNumbers) => {
+  let smallest = arrayOfNumbers[0];
+  let secondSmallest = arrayOfNumbers[1];
+  arrayOfNumbers.forEach((eachNumber) => {
+    if (eachNumber < smallest) {
+      secondSmallest = smallest;
+      smallest = eachNumber;
+    } else if (eachNumber > smallest && eachNumber < secondSmallest) {
+      secondSmallest = eachNumber;
+    }
+  });
+  return secondSmallest;
+};
+```

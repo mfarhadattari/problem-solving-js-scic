@@ -18,5 +18,5 @@ const romanToDecimal = (romanNumeral) => {
 };
 
 // testing function
-const testingResult = romanToDecimal("XXI");
+const testingResult = romanToDecimal("XI");
 console.log(testingResult);
