@@ -74,6 +74,19 @@ const arithmeticCalculator = (num1, num2, operation) => {
 ```
 ### Task 6: Create a program that generates a random password of a specified length. The password should include a mix of uppercase letters, lowercase letters, numbers, and special characters.
 
+```javaScript
+const passwordGenerator = (length) => {
+  const characters =
+    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$&*";
+  let password = "";
+  for (let i = 0; i < length; i++) {
+    const index = Math.round(Math.random() * characters.length);
+    password += characters[index];
+  }
+  return password;
+};
+```
+
 ### Task 7: Implement a function that converts a Roman numeral to an integer. The function should take a Roman numeral string (e.g., "IX" or "XXI") as input and return the corresponding integer value.
 
 ### Task 8: Implement a JavaScript function to find the second smallest element in an array of numbers. The function should return the second smallest number.
