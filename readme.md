@@ -22,6 +22,19 @@ const sumOfPositiveNumber = (arrayOfNumbers) => {
 
 ### Task 3: Write a JavaScript program to find the most frequent element in an array and return it.
 
+```javaScript
+const mostFrequentElement = (array) => {
+  let mostFrequentElement;
+  let highestCount = 0;
+  array.forEach((eachElement) => {
+    const filtered = array.filter((eachItem) => eachElement === eachItem);
+    mostFrequentElement = filtered.length > highestCount ? eachElement : mostFrequentElement;
+    highestCount = filtered.length > highestCount ? filtered.length : highestCount;
+  });
+  
+  return mostFrequentElement;
+};
+```
 ### Task 4: Create a function that takes a sorted array of numbers and a target value as input. The function should find two numbers in the array that add up to the target value. Return an array containing the indices of the two numbers.
 
 ### Task 5: Implement a simple JavaScript calculator. The calculator should take two numbers and an operator (+, -, \*, /) as input and return the result of the operation.
